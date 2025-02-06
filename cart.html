@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .welcome-section {
+            padding: 50px 0;
+            background-color: #e3f2fd;
+        }
+        .footer {
+            padding: 20px 0;
+            background-color: #1a237e;
+            color: #fff;
+            text-align: center;
+        }
+        .bookadd{
+            padding: 100px;
+        }
+        .admin-table {
+            margin-top: 40px;
+        }
+        #finalcost::before
+        {
+            content: "final cost is : ";
+        }
+        #finalcount::before
+        {
+            content: "books :  ";
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-wrapper indigo accent-3">
+        <div class="container">
+            <a href="index.html" class="brand-logo left">Bookstore</a>
+            <ul class="right">
+                <li><a href="store.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="welcome-section center-align valign-wrapper">
+        <h2 class="container">Your Cart</h2>
+    </div>
+    </div>
+    <div class="admin-table card-panel">
+    <table class="highlight">
+        <thead>
+            <tr>
+                <th>book title</th>
+                <th>Author name</th>
+                <th>book price</th>
+                <th>remove</th>
+            </tr>
+        </thead>
+        <tbody id="tcart">
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td id="finalcount"></td>
+                <td id="finalcost"></td>
+                <td> <a class="btn btn-action green">checkout</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+
+
+<script src="main.js"></script>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Bookstore. All rights reserved to omar.</p>
+        </div>
+    </footer>
+</body>
+</html>
