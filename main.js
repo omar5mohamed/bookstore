@@ -8,6 +8,9 @@ let count = document.getElementById("count");
 let category = document.getElementById("category");
 let submit = document.getElementById("submit")
 let final = document.getElementById("final")
+let name = document.getElementById("yourname")
+let address = document.getElementById("address")
+let phone = document.getElementById("phone")
 
 // get total
 function getTotal()
@@ -36,6 +39,16 @@ if (localStorage.cart != null){
     cartdata = [];
 }
 
+// create cart base in localstorage
+let customerdata ;
+if (localStorage.customer != null){
+    customerdata =JSON.parse(localStorage.customer)
+}else{
+    customerdata = [];
+}
+
+
+
 // create book
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href.includes('admin')) {
@@ -61,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showdata()
         }
 
-    } else if (window.location.href.includes('store')){
+    } else if (window.location.href.includes('index')){
         console.log('This is the store page');
         showstoredata();
 
@@ -155,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('This is the store admin');
         showdata();
 
-    } else if (window.location.href.includes('store')){
+    } else if (window.location.href.includes('index')){
         console.log('This is the store page');
         showstoredata();
 
@@ -212,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('This is the store cart');
         // console.log(cartdata)
         showcartdata()
+        
 
     }
     else
@@ -242,6 +256,24 @@ function finalcost(){
     document.getElementById("finalcount").innerHTML = cartdata.length;          
 }
 finalcost()
-// count
-// update
-// clean data
+
+
+
+//checkout
+
+//create customer  object
+
+
+
+  check.onclick = function()
+  {
+      let newcustomer = {
+          name:yourname.value,
+          phone:phone.value,
+          address:address.value,
+      }
+
+      customerdata.push(newcustomer);
+      localStorage.setItem('customer',JSON.stringify(customerdata));
+      console.log(customerdata);
+  }

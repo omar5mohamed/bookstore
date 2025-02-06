@@ -9,7 +9,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <style>
         /* Custom Styles */
         .book-card {
@@ -33,99 +33,40 @@
             color: #fff;
             text-align: center;
         }
-    </style>
+        </style>
 </head>
 <body>
     <nav class="nav-wrapper indigo accent-3">
         <div class="container">
-            <a href="#" class="brand-logo left">Bookstore</a>
+            <a href="index.html" class="brand-logo left">Bookstore</a>
             <ul class="right">
+                <!-- <li><a href="index.html">Home</a></li> -->
                 <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="admin.html">Admin</a></li>
             </ul>
         </div>
     </nav>
-
-    <div class="welcome-section center-align valign-wrapper">
-        <h2 class="container">Welcome to Our Bookstore</h2>
-    </div>
+    
     <div class="container">
-        <h4 class="center-align">Featured Books</h4>
-        <div class="row">
+        <div class="row"id="storebooks">
             <div class="col s12 m6 l4">
                 <div class="book-card">
                     <img src="book.jpg" alt="Book 1">
-                    <h5>Book Title 1</h5>
+                    <h5>Book Title 0</h5>
                     <p>Author: Author Name</p>
                     <p>Price: $20.00</p>
                     <a class="btn indigo accent-3">Add to Cart</a>
                 </div>
+                
             </div>
-            <div class="col s12 m6 l4">
-                <div class="book-card">
-                    <img src="book.jpg" alt="Book 2">
-                    <h5>Book Title 2</h5>
-                    <p>Author: Author Name</p>
-                    <p>Price: $25.00</p>
-                    <a class="btn indigo accent-3">Add to Cart</a>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="book-card">
-                    <img src="book.jpg" alt="Book 3">
-                    <h5>Book Title 3</h5>
-                    <p>Author: Author Name</p>
-                    <p>Price: $30.00</p>
-                    <a class="btn indigo accent-3">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-    </div><br><br>
-    <div class="welcome-section center-align valign-wrapper">
-      <h2 class="container">
-        <a href="store.html">our store page</a>
-      </h2>
-  </div>
-            <!------------------------------------------->
-            <div class="container">
-              <h4 class="center-align">Our New Books</h4>
-              <div class="row">
-                  <div class="col s12 m6 l4">
-                      <div class="book-card">
-                          <img src="book.jpg" alt="Book 1">
-                          <h5>Book Title 1</h5>
-                          <p>Author: Author Name</p>
-                          <p>Price: $20.00</p>
-                          <a class="btn indigo accent-3">Add to Cart</a>
-                      </div>
-                  </div>
-                  <div class="col s12 m6 l4">
-                      <div class="book-card">
-                          <img src="book.jpg" alt="Book 2">
-                          <h5>Book Title 2</h5>
-                          <p>Author: Author Name</p>
-                          <p>Price: $25.00</p>
-                          <a class="btn indigo accent-3">Add to Cart</a>
-                      </div>
-                  </div>
-                  <div class="col s12 m6 l4">
-                      <div class="book-card">
-                          <img src="book.jpg" alt="Book 3">
-                          <h5>Book Title 3</h5>
-                          <p>Author: Author Name</p>
-                          <p>Price: $30.00</p>
-                          <a class="btn indigo accent-3">Add to Cart</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div><br><br>
+            <script src="main.js"></script>            
             
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; Bookstore. All rights reserved to omar.</p>
-        </div>
-    </footer>
-</body>
-</html>
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; Bookstore. All rights reserved to omar.</p>
+                </div>
+            </footer>
+        </body>
+        </html>

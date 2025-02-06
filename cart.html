@@ -43,7 +43,7 @@
         <div class="container">
             <a href="index.html" class="brand-logo left">Bookstore</a>
             <ul class="right">
-                <li><a href="store.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="admin.html">Admin</a></li>
             </ul>
@@ -54,6 +54,25 @@
         <h2 class="container">Your Cart</h2>
     </div>
     </div>
+
+    <div class="card-panel bookadd">
+        <h5>Add a New Book</h5>
+        <form id="addBookForm">
+            <div class="input-field">
+                <input type="text" id="yourname" required>
+                <label for="yourname">your name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="address" required>
+                <label for="address">address</label>
+            </div>
+            <div class="input-field">
+                <input  type="number" id="phone" required>
+                <label for="phone">phone number</label>
+            </div>
+        </form>
+            </div>
+
     <div class="admin-table card-panel">
     <table class="highlight">
         <thead>
@@ -72,7 +91,7 @@
                 <td></td>
                 <td id="finalcount"></td>
                 <td id="finalcost"></td>
-                <td> <a class="btn btn-action green">checkout</a>
+                <td> <button  id="check" class="btn btn-action green">checkout</button>
                 </td>
             </tr>
         </tfoot>
